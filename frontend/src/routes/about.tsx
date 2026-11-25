@@ -1,5 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { imageCatalog } from '../data/site'
+import { SiteIcon } from '../components/icons'
 import { Eyebrow, PageHeading, PageShell } from '../components/site'
 
 export const Route = createFileRoute('/about')({
@@ -139,7 +140,7 @@ function AboutPage() {
           into each project according to its scope and requirements.
         </p>
         <a className="text-link" href="/contact">
-          Start a conversation <span aria-hidden="true">↗</span>
+          Start a conversation <SiteIcon name="arrow-up-right" />
         </a>
       </section>
       <section className="short-cta">
@@ -150,7 +151,7 @@ function AboutPage() {
           <em>what you’re imagining.</em>
         </h2>
         <a className="button button--cream" href="/contact">
-          Start a project <span aria-hidden="true">↗</span>
+          Start a project <SiteIcon name="arrow-up-right" />
         </a>
       </section>
     </PageShell>

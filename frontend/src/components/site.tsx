@@ -3,6 +3,7 @@ import type { FormEvent, ReactNode } from 'react'
 import { Link } from '@tanstack/react-router'
 import { DayPicker } from 'react-day-picker'
 import 'react-day-picker/style.css'
+import { SiteIcon } from './icons'
 import { projects, services } from '../data/site'
 import type { Project } from '../data/site'
 import { apiRequest } from '../lib/api'
@@ -78,7 +79,7 @@ export function SiteHeader() {
             activeProps={{ 'aria-current': 'page' }}
             onClick={closeMenu}
           >
-            Start a project <span aria-hidden="true">↗</span>
+            Start a project <SiteIcon name="arrow-up-right" />
           </Link>
         </nav>
       </div>
@@ -108,7 +109,7 @@ export function SiteFooter() {
         <div className="footer-column">
           <span className="eyebrow">Get in touch</span>
           <Link to="/contact">
-            Tell us about your project <span aria-hidden="true">↗</span>
+            Tell us about your project <SiteIcon name="arrow-up-right" />
           </Link>
           <p>Lagos, Nigeria</p>
           <p className="footer-note">
@@ -119,14 +120,16 @@ export function SiteFooter() {
           <span className="eyebrow">A good place to begin</span>
           <p>Every considered space starts with a conversation.</p>
           <Link className="text-link text-link--light" to="/contact">
-            Share your brief <span aria-hidden="true">↗</span>
+            Share your brief <SiteIcon name="arrow-up-right" />
           </Link>
         </div>
       </div>
       <div className="site-footer__bottom">
         <span>© {new Date().getFullYear()} Zettos Interior Units</span>
         <span>Thoughtfully designed. Beautifully built.</span>
-        <a href="#top">Back to top ↑</a>
+        <a href="#top">
+          Back to top <SiteIcon name="arrow-up" />
+        </a>
       </div>
     </footer>
   )
@@ -160,7 +163,7 @@ export function PublicDataError({
             : 'Please try again in a moment.'}
         </p>
         <button className="text-link" type="button" onClick={reset}>
-          Try again <span aria-hidden="true">↻</span>
+          Try again <SiteIcon name="refresh" />
         </button>
       </section>
     </PageShell>
@@ -203,8 +206,8 @@ export function ProjectCard({ project }: { project: Project }) {
         >
           {statusLabel}
         </span>
-        <span className="project-card__arrow" aria-hidden="true">
-          ↗
+        <span className="project-card__arrow">
+          <SiteIcon name="arrow-up-right" />
         </span>
       </a>
       <div className="project-card__meta">
@@ -293,7 +296,7 @@ export function ProjectExplorer({
             }}
             placeholder="Search projects"
           />
-          <span aria-hidden="true">⌕</span>
+          <SiteIcon name="search" />
         </label>
         <p className="project-result-count" aria-live="polite">
           Showing {Math.min(visibleCount, shownProjects.length)} of{' '}
@@ -322,7 +325,7 @@ export function ProjectExplorer({
           type="button"
           onClick={() => setVisibleCount((count) => count + 12)}
         >
-          Load more concepts <span aria-hidden="true">↓</span>
+          Load more concepts <SiteIcon name="arrow-down" />
         </button>
       )}
       <p className="concept-disclaimer">
@@ -484,7 +487,7 @@ export function EnquiryForm() {
             target="_blank"
             rel="noreferrer"
           >
-            Or start a WhatsApp conversation <span aria-hidden="true">↗</span>
+            Or start a WhatsApp conversation <SiteIcon name="arrow-up-right" />
           </a>
         ) : (
           <p className="contact-shortcut contact-shortcut--muted">
@@ -624,7 +627,7 @@ export function EnquiryForm() {
         )}
         <button className="button button--dark" type="submit" disabled={isSubmitting}>
           {isSubmitting ? 'Sending enquiry…' : 'Send my enquiry'}{' '}
-          {!isSubmitting && <span aria-hidden="true">↗</span>}
+          {!isSubmitting && <SiteIcon name="arrow-up-right" />}
         </button>
         <p className="form-privacy">
           We’ll only use these details to respond to your project enquiry.
@@ -683,7 +686,7 @@ function DatePickerField({
               aria-label="Close calendar"
               onClick={() => setOpen(false)}
             >
-              ×
+              <SiteIcon name="close" />
             </button>
           </div>
           <DayPicker
@@ -727,8 +730,8 @@ export function ServiceCards({
           >
             <img src={service.image} alt={service.alt} loading="lazy" />
             <span className="service-card__number">{service.number}</span>
-            <span className="project-card__arrow" aria-hidden="true">
-              ↗
+            <span className="project-card__arrow">
+              <SiteIcon name="arrow-up-right" />
             </span>
           </a>
           <div className="service-card__body">
@@ -745,7 +748,7 @@ export function ServiceCards({
               ))}
             </ul>
             <a className="text-link" href={`/services/${service.id}`}>
-              Explore this service <span aria-hidden="true">↗</span>
+              Explore this service <SiteIcon name="arrow-up-right" />
             </a>
           </div>
         </article>

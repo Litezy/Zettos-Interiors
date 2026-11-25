@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { createFileRoute } from '@tanstack/react-router'
 import { AdminShell } from '../components/admin'
 import type { AdminProject } from '../components/admin'
+import { SiteIcon } from '../components/icons'
 import { apiRequest } from '../lib/api'
 
 export const Route = createFileRoute('/admin/')({
@@ -86,7 +87,7 @@ function AdminDashboardPage() {
                   <h2>Recent enquiries</h2>
                 </div>
                 <a className="text-link" href="/admin/enquiries">
-                  View all ↗
+                  View all <SiteIcon name="arrow-up-right" />
                 </a>
               </div>
               {dashboard.recentEnquiries.length ? (
@@ -121,7 +122,7 @@ function AdminDashboardPage() {
                   <h2>Recently updated</h2>
                 </div>
                 <a className="text-link" href="/admin/projects">
-                  Manage ↗
+                  Manage <SiteIcon name="arrow-up-right" />
                 </a>
               </div>
               <ul className="admin-project-list">

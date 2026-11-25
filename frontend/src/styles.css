@@ -96,6 +96,14 @@ img {
   max-width: 100%;
 }
 
+.ui-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex: 0 0 auto;
+  vertical-align: -0.125em;
+}
+
 ::selection {
   color: var(--paper);
   background: var(--terracotta);
@@ -231,8 +239,9 @@ img {
   background: var(--forest);
 }
 
-.nav-cta span {
-  font-size: 16px;
+.nav-cta .ui-icon {
+  width: 16px;
+  height: 16px;
 }
 
 .menu-toggle {
@@ -2561,7 +2570,7 @@ input[type='checkbox']:disabled {
   color: #89877e;
 }
 
-.project-search > span:last-child {
+.project-search > .ui-icon {
   color: var(--terracotta);
   font-size: 22px;
 }
@@ -2594,7 +2603,7 @@ input[type='checkbox']:disabled {
   background: var(--forest);
 }
 
-.load-more-button span {
+.load-more-button .ui-icon {
   color: var(--terracotta);
 }
 

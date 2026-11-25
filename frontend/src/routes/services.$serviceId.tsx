@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { createFileRoute } from '@tanstack/react-router'
+import { SiteIcon } from '../components/icons'
 import {
   Eyebrow,
   PageShell,
@@ -98,7 +99,7 @@ function ServiceDetailPage() {
           </h1>
           <p>{service.short}</p>
           <a className="button button--cream" href="/contact">
-            Discuss your project <span aria-hidden="true">↗</span>
+            Discuss your project <SiteIcon name="arrow-up-right" />
           </a>
         </div>
       </section>
@@ -131,7 +132,7 @@ function ServiceDetailPage() {
             <div className="service-list__item" key={item}>
               <span>{String(index + 1).padStart(2, '0')}</span>
               <h3>{item}</h3>
-              <span aria-hidden="true">↗</span>
+              <SiteIcon name="arrow-up-right" />
             </div>
           ))}
         </div>
@@ -191,7 +192,7 @@ function ServiceDetailPage() {
           <em>the space you imagine.</em>
         </h2>
         <a className="button button--cream" href="/contact">
-          Start a project <span aria-hidden="true">↗</span>
+          Start a project <SiteIcon name="arrow-up-right" />
         </a>
       </section>
     </PageShell>

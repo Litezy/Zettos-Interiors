@@ -5,6 +5,7 @@ import {
   PageHeading,
   PageShell,
 } from '../components/site'
+import { SiteIcon } from '../components/icons'
 
 export const Route = createFileRoute('/contact')({
   head: () => ({
@@ -67,7 +68,7 @@ function ContactPage() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Message the studio ↗
+                Message the studio <SiteIcon name="arrow-up-right" />
               </a>
             ) : (
               <span>To be confirmed</span>

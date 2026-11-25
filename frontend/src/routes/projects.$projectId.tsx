@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { createFileRoute } from '@tanstack/react-router'
+import { SiteIcon } from '../components/icons'
 import {
   Eyebrow,
   PageShell,
@@ -142,7 +143,7 @@ function ProjectDetailPage() {
                 : 'This project is marked as completed. Contact Zettos for further project details.'}
           </p>
           <a className="text-link" href="/contact">
-            Discuss an idea of your own <span aria-hidden="true">↗</span>
+            Discuss an idea of your own <SiteIcon name="arrow-up-right" />
           </a>
         </div>
       </section>
@@ -186,7 +187,7 @@ function ProjectDetailPage() {
             </h2>
           </div>
           <a className="text-link" href="/projects">
-            All projects <span aria-hidden="true">↗</span>
+            All projects <SiteIcon name="arrow-up-right" />
           </a>
         </div>
         <div className="project-grid">

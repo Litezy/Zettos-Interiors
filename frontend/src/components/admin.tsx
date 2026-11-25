@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import type { FormEvent, InputHTMLAttributes, ReactNode } from 'react'
+import { SiteIcon } from './icons'
 import { apiRequest } from '../lib/api'
 
 export type AdminUser = {
@@ -169,7 +170,7 @@ export function AdminShell({
             <h1>{title}</h1>
           </div>
           <a href="/" target="_blank" rel="noreferrer">
-            View website ↗
+            View website <SiteIcon name="arrow-up-right" />
           </a>
         </header>
         {authError && <p className="admin-alert">{authError}</p>}

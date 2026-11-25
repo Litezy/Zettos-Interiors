@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { createFileRoute } from '@tanstack/react-router'
 import { AdminShell } from '../components/admin'
+import { SiteIcon } from '../components/icons'
 import { apiRequest, downloadApiFile } from '../lib/api'
 
 export const Route = createFileRoute('/admin/enquiries')({
@@ -337,7 +338,8 @@ function AdminEnquiriesPage() {
                             )
                           }
                         >
-                          {attachment.fileName} ↗
+                          {attachment.fileName}{' '}
+                          <SiteIcon name="arrow-up-right" />
                         </button>
                         <small>
                           {Math.ceil(attachment.sizeBytes / 1024)} KB ·{' '}

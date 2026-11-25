@@ -12,6 +12,7 @@ import {
   ServiceCards,
   PublicDataError,
 } from '../components/site'
+import { SiteIcon } from '../components/icons'
 import { apiRequest, isApiConfigured } from '../lib/api'
 import {
   mapPublicProject,
@@ -85,10 +86,10 @@ function Home() {
           </p>
           <div className="hero__actions">
             <a className="button button--cream" href="/projects">
-              Explore our projects <span aria-hidden="true">↗</span>
+              Explore our projects <SiteIcon name="arrow-up-right" />
             </a>
             <a className="hero__text-link" href="/contact">
-              Start a project <span aria-hidden="true">↗</span>
+              Start a project <SiteIcon name="arrow-up-right" />
             </a>
           </div>
         </div>
@@ -117,7 +118,7 @@ function Home() {
               everyday life better.
             </p>
             <a className="text-link" href="/about">
-              Meet the studio <span aria-hidden="true">↗</span>
+              Meet the studio <SiteIcon name="arrow-up-right" />
             </a>
           </div>
         </div>
@@ -197,7 +198,7 @@ function Home() {
             </h2>
           </div>
           <a className="text-link" href="/projects">
-            View all projects <span aria-hidden="true">↗</span>
+            View all projects <SiteIcon name="arrow-up-right" />
           </a>
         </div>
         <ProjectPreview limit={3} items={projects} />
@@ -217,7 +218,7 @@ function Home() {
             craftsmanship to make spaces that feel like they belong.
           </p>
           <a className="button button--cream" href="/process">
-            Discover our approach <span aria-hidden="true">↗</span>
+            Discover our approach <SiteIcon name="arrow-up-right" />
           </a>
         </div>
         <span className="statement-section__note">
@@ -238,7 +239,7 @@ function Home() {
             clear, the details considered and the next step understood.
           </p>
           <a className="text-link" href="/process">
-            Explore the process <span aria-hidden="true">↗</span>
+            Explore the process <SiteIcon name="arrow-up-right" />
           </a>
         </div>
         <div className="steps-list">
@@ -249,8 +250,8 @@ function Home() {
                 <h3>{step.title}</h3>
                 <p>{step.text}</p>
               </div>
-              <span className="step-row__arrow" aria-hidden="true">
-                ↗
+              <span className="step-row__arrow">
+                <SiteIcon name="arrow-up-right" />
               </span>
             </article>
           ))}
@@ -268,7 +269,7 @@ function Home() {
           <em>for what’s next.</em>
         </h2>
         <a className="button button--cream" href="/contact">
-          Tell us about your project <span aria-hidden="true">↗</span>
+          Tell us about your project <SiteIcon name="arrow-up-right" />
         </a>
       </section>
     </PageShell>

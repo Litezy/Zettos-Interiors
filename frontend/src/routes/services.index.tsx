@@ -1,5 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { services as localServices } from '../data/site'
+import { SiteIcon } from '../components/icons'
 import {
   Eyebrow,
   PageHeading,
@@ -83,7 +84,7 @@ function ServicesPage() {
               <div className="service-list__item" key={offering}>
                 <span>{String(index + 1).padStart(2, '0')}</span>
                 <h3>{offering}</h3>
-                <span aria-hidden="true">↗</span>
+                <SiteIcon name="arrow-up-right" />
               </div>
             ))}
         </div>
@@ -100,7 +101,7 @@ function ServicesPage() {
           <em>a good place to begin.</em>
         </h2>
         <a className="button button--cream" href="/contact">
-          Share your project <span aria-hidden="true">↗</span>
+          Share your project <SiteIcon name="arrow-up-right" />
         </a>
       </section>
     </PageShell>

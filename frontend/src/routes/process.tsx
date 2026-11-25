@@ -1,5 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { processSteps } from '../data/site'
+import { SiteIcon } from '../components/icons'
 import { Eyebrow, PageHeading, PageShell } from '../components/site'
 
 export const Route = createFileRoute('/process')({
@@ -94,7 +95,7 @@ function ProcessPage() {
           <em>the right next step.</em>
         </h2>
         <a className="button button--cream" href="/contact">
-          Talk to the studio <span aria-hidden="true">↗</span>
+          Talk to the studio <SiteIcon name="arrow-up-right" />
         </a>
       </section>
     </PageShell>
