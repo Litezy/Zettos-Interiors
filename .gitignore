@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Build and generated output
+dist/
+dist-ssr/
+.output/
+.tanstack/
+.nitro/
+coverage/
+routeTree.gen.ts
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Logs and local tooling
+*.log
+*.tsbuildinfo
+.vscode/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,174 @@
+{
+  "note": "Replaceable remote editorial/concept imagery plus user-supplied local Zettos images. Concept imagery must not be presented as completed project photography.",
+  "assets": [
+    {
+      "id": "ceo-portrait",
+      "url": "/images/ceo_img.JPG",
+      "usage": ["about page leadership portrait"],
+      "alt": "Chief Executive Officer of Zettos Interior Units",
+      "label": "User-supplied company image"
+    },
+    {
+      "id": "ongoing-site-progress-01",
+      "url": "/images/site_1.JPG",
+      "usage": ["ongoing construction project progress"],
+      "alt": "Zettos team member in branded safety vest at a project site in progress",
+      "label": "Ongoing work, project details pending confirmation"
+    },
+    {
+      "id": "ongoing-site-progress-02",
+      "url": "/images/site_2.JPG",
+      "usage": ["ongoing construction project progress"],
+      "alt": "Zettos team member in branded safety vest at a large project site in progress",
+      "label": "Ongoing work, project details pending confirmation"
+    },
+    {
+      "id": "living-room-warm-light",
+      "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1400&q=85",
+      "usage": [
+        "homepage hero",
+        "interior-design",
+        "bedroom",
+        "living-room",
+        "renovation concepts"
+      ],
+      "alt": "Warm contemporary living room with sculptural furniture and natural light",
+      "label": "Concept visualisation"
+    },
+    {
+      "id": "sunlit-residential-interior",
+      "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=85",
+      "usage": [
+        "homepage introduction",
+        "about page",
+        "interior-design",
+        "residential",
+        "bedroom",
+        "living-room",
+        "renovation concepts"
+      ],
+      "alt": "Airy modern home interior with warm timber and large windows",
+      "label": "Concept visualisation"
+    },
+    {
+      "id": "natural-interior-detail",
+      "url": "https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&w=1400&q=85",
+      "usage": [
+        "interior-design service",
+        "interior-design",
+        "kitchen",
+        "bedroom",
+        "renovation concepts"
+      ],
+      "alt": "Refined interior with natural textures and a warm neutral palette",
+      "label": "Concept visualisation"
+    },
+    {
+      "id": "textured-contemporary-room",
+      "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=85",
+      "usage": [
+        "interior-design",
+        "kitchen",
+        "living-room",
+        "renovation concepts"
+      ],
+      "alt": "Contemporary interior concept with warm natural materials and considered details",
+      "label": "Concept visualisation"
+    },
+    {
+      "id": "contemporary-home-exterior",
+      "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=85",
+      "usage": [
+        "residential",
+        "construction concepts",
+        "homepage statement section"
+      ],
+      "alt": "Contemporary home architecture with thoughtful landscaping",
+      "label": "Architectural concept"
+    },
+    {
+      "id": "residential-natural-materials",
+      "url": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1400&q=85",
+      "usage": ["residential", "service image references"],
+      "alt": "Modern residential interior with natural materials",
+      "label": "Concept visualisation"
+    },
+    {
+      "id": "residential-light-and-form",
+      "url": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1400&q=85",
+      "usage": ["residential and construction concepts"],
+      "alt": "Contemporary residential architecture with clear geometric form",
+      "label": "Architectural concept"
+    },
+    {
+      "id": "workplace-collaboration",
+      "url": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=85",
+      "usage": ["commercial", "office concepts", "workspace references"],
+      "alt": "Bright contemporary studio workspace with shared tables and natural materials",
+      "label": "Concept visualisation"
+    },
+    {
+      "id": "workplace-daylight",
+      "url": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1400&q=85",
+      "usage": ["commercial and office concepts"],
+      "alt": "Daylit modern office interior with shared work areas",
+      "label": "Concept visualisation"
+    },
+    {
+      "id": "workplace-open-plan",
+      "url": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1400&q=85",
+      "usage": ["commercial and office concepts"],
+      "alt": "Open contemporary workplace arranged for focused and collaborative work",
+      "label": "Concept visualisation"
+    },
+    {
+      "id": "studio-workspace",
+      "url": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1400&q=85",
+      "usage": ["commercial and office concepts"],
+      "alt": "Contemporary studio workspace with considered furnishings",
+      "label": "Concept visualisation"
+    },
+    {
+      "id": "kitchen-material-study",
+      "url": "https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?auto=format&fit=crop&w=1400&q=85",
+      "usage": ["kitchen concepts"],
+      "alt": "Kitchen interior concept with warm cabinetry, natural stone and soft daylight",
+      "label": "Concept visualisation"
+    },
+    {
+      "id": "kitchen-gathering-space",
+      "url": "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1400&q=85",
+      "usage": ["kitchen concepts"],
+      "alt": "Contemporary kitchen and living space with natural light",
+      "label": "Concept visualisation"
+    },
+    {
+      "id": "restful-bedroom",
+      "url": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1400&q=85",
+      "usage": ["bedroom concepts"],
+      "alt": "Restful bedroom concept with soft linen, warm wood and natural light",
+      "label": "Concept visualisation"
+    },
+    {
+      "id": "construction-and-site",
+      "url": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1400&q=85",
+      "usage": ["construction concepts"],
+      "alt": "Building construction concept showing an active project site",
+      "label": "Illustrative construction image"
+    },
+    {
+      "id": "architecture-and-form",
+      "url": "https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1400&q=85",
+      "usage": ["construction concepts"],
+      "alt": "Architectural concept showing a considered building form",
+      "label": "Architectural concept"
+    },
+    {
+      "id": "building-service",
+      "url": "https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=1000&q=85",
+      "usage": ["building construction service"],
+      "alt": "Contemporary architecture with crisp forms and natural materials",
+      "label": "Illustrative service imagery"
+    }
+  ]
+}

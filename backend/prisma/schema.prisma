@@ -1,0 +1,295 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum AdminRole {
+  SUPER_ADMIN
+  CONTENT_MANAGER
+}
+
+enum ProjectStatus {
+  CONCEPT
+  ONGOING
+  COMPLETED
+}
+
+enum ProjectImageRole {
+  GALLERY
+  BEFORE
+  AFTER
+}
+
+enum PropertyType {
+  RESIDENTIAL
+  COMMERCIAL
+  NOT_SURE
+}
+
+enum ProjectRequestType {
+  INTERIOR_DESIGN
+  BUILDING_CONSTRUCTION
+  RENOVATION
+  NOT_SURE
+}
+
+enum PreferredContactMethod {
+  EMAIL
+  PHONE
+  WHATSAPP
+}
+
+enum EnquiryStatus {
+  NEW
+  CONTACTED
+  CONSULTATION_SCHEDULED
+  QUOTATION_SENT
+  IN_NEGOTIATION
+  APPROVED
+  IN_PROGRESS
+  COMPLETED
+  DECLINED
+}
+
+model AdminUser {
+  id                  String                @id @default(uuid())
+  fullName            String
+  email               String                @unique
+  passwordHash        String
+  role                AdminRole             @default(CONTENT_MANAGER)
+  isActive            Boolean               @default(true)
+  lastLoginAt         DateTime?
+  createdAt           DateTime              @default(now())
+  updatedAt           DateTime              @updatedAt
+  sessions            AdminSession[]
+  passwordResetTokens PasswordResetToken[]
+  notes               EnquiryNote[]
+  activities          ActivityLog[]
+  enquiryActivities   EnquiryActivity[]
+  assignedEnquiries   Enquiry[]             @relation("AssignedEnquiries")
+
+  @@index([role, isActive])
+}
+
+model AdminSession {
+  id        String    @id @default(uuid())
+  tokenHash String    @unique
+  userId    String
+  user      AdminUser @relation(fields: [userId], references: [id], onDelete: Cascade)
+  expiresAt DateTime
+  createdAt DateTime  @default(now())
+
+  @@index([userId, expiresAt])
+  @@index([expiresAt])
+}
+
+model PasswordResetToken {
+  id        String    @id @default(uuid())
+  tokenHash String    @unique
+  userId    String
+  user      AdminUser @relation(fields: [userId], references: [id], onDelete: Cascade)
+  expiresAt DateTime
+  usedAt    DateTime?
+  createdAt DateTime  @default(now())
+
+  @@index([userId, expiresAt])
+}
+
+model ProjectCategory {
+  id        String    @id @default(uuid())
+  name      String
+  slug      String    @unique
+  sortOrder Int       @default(0)
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  projects  Project[]
+}
+
+model Project {
+  id              String          @id @default(uuid())
+  title           String
+  slug            String          @unique
+  categoryId      String
+  category        ProjectCategory @relation(fields: [categoryId], references: [id], onDelete: Restrict)
+  status          ProjectStatus   @default(CONCEPT)
+  isConcept       Boolean         @default(false)
+  isPublished     Boolean         @default(false)
+  location        String?
+  description     String
+  scope           Json
+  highlights      String[]        @default([])
+  projectYear     Int?
+  coverImageUrl   String?
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+  images          ProjectImage[]
+
+  @@index([isPublished, status, createdAt])
+  @@index([categoryId, isPublished])
+  @@index([title])
+}
+
+model ProjectImage {
+  id        String           @id @default(uuid())
+  projectId String
+  project   Project          @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  url       String
+  fileKey   String?
+  alt       String
+  role      ProjectImageRole @default(GALLERY)
+  sortOrder Int              @default(0)
+  createdAt DateTime         @default(now())
+
+  @@index([projectId, role, sortOrder])
+}
+
+model Service {
+  id          String         @id @default(uuid())
+  name        String
+  slug        String         @unique
+  short       String
+  description String
+  offerings   Json
+  process     Json
+  isPublished Boolean        @default(false)
+  sortOrder   Int            @default(0)
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
+  images      ServiceImage[]
+  faqs        FAQ[]
+
+  @@index([isPublished, sortOrder])
+}
+
+model ServiceImage {
+  id        String   @id @default(uuid())
+  serviceId String
+  service   Service  @relation(fields: [serviceId], references: [id], onDelete: Cascade)
+  url       String
+  fileKey   String?
+  alt       String
+  sortOrder Int      @default(0)
+  createdAt DateTime @default(now())
+
+  @@index([serviceId, sortOrder])
+}
+
+model Enquiry {
+  id                   String                 @id @default(uuid())
+  reference            String                 @unique
+  fullName             String
+  email                String
+  phone                String?
+  preferredContact     PreferredContactMethod @default(EMAIL)
+  location             String?
+  projectType          ProjectRequestType
+  propertyType         PropertyType           @default(NOT_SURE)
+  description          String
+  budget               String?
+  preferredStartDate   DateTime?
+  projectSize          String?
+  roomCount            Int?
+  status               EnquiryStatus          @default(NEW)
+  assignedToId         String?
+  assignedTo           AdminUser?             @relation("AssignedEnquiries", fields: [assignedToId], references: [id], onDelete: SetNull)
+  createdAt            DateTime               @default(now())
+  updatedAt            DateTime               @updatedAt
+  attachments          EnquiryAttachment[]
+  notes                EnquiryNote[]
+  activities           EnquiryActivity[]
+
+  @@index([status, createdAt])
+  @@index([projectType, status])
+  @@index([email])
+  @@index([assignedToId, status])
+}
+
+model EnquiryAttachment {
+  id          String   @id @default(uuid())
+  enquiryId   String
+  enquiry     Enquiry  @relation(fields: [enquiryId], references: [id], onDelete: Cascade)
+  fileKey     String
+  fileName    String
+  contentType String
+  sizeBytes   Int
+  createdAt   DateTime @default(now())
+
+  @@index([enquiryId])
+}
+
+model EnquiryNote {
+  id        String    @id @default(uuid())
+  enquiryId String
+  enquiry  Enquiry   @relation(fields: [enquiryId], references: [id], onDelete: Cascade)
+  adminId   String
+  admin     AdminUser @relation(fields: [adminId], references: [id], onDelete: Restrict)
+  body      String
+  createdAt DateTime  @default(now())
+
+  @@index([enquiryId, createdAt])
+}
+
+model EnquiryActivity {
+  id        String    @id @default(uuid())
+  enquiryId String
+  enquiry  Enquiry   @relation(fields: [enquiryId], references: [id], onDelete: Cascade)
+  actorId   String?
+  actor     AdminUser? @relation(fields: [actorId], references: [id], onDelete: SetNull)
+  type      String
+  body      String
+  createdAt DateTime  @default(now())
+
+  @@index([enquiryId, createdAt])
+}
+
+model Testimonial {
+  id          String   @id @default(uuid())
+  clientName  String
+  attribution String?
+  quote       String
+  isPublished Boolean  @default(false)
+  sortOrder   Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([isPublished, sortOrder])
+}
+
+model FAQ {
+  id        String   @id @default(uuid())
+  serviceId String?
+  service   Service? @relation(fields: [serviceId], references: [id], onDelete: Cascade)
+  question  String
+  answer    String
+  isPublished Boolean @default(false)
+  sortOrder Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([serviceId, isPublished, sortOrder])
+}
+
+model SiteSetting {
+  id        String   @id @default(uuid())
+  key       String   @unique
+  value     Json
+  updatedAt DateTime @updatedAt
+}
+
+model ActivityLog {
+  id         String    @id @default(uuid())
+  adminId    String?
+  admin      AdminUser? @relation(fields: [adminId], references: [id], onDelete: SetNull)
+  action     String
+  entityType String
+  entityId   String?
+  details    Json?
+  createdAt  DateTime  @default(now())
+
+  @@index([adminId, createdAt])
+  @@index([entityType, entityId, createdAt])
+}

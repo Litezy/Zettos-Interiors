@@ -1,0 +1,948 @@
+# MASTER PROJECT PROMPT: ZETTOS INTERIOR UNITS — BRAND, WEBSITE & FULL-STACK APPLICATION
+
+## YOUR ROLE
+
+Act as a senior product designer, brand strategist, UI/UX architect, creative director, frontend engineer and backend engineer with over 10 years of experience building premium digital experiences for architecture studios, interior design companies, construction businesses and real-estate brands.
+
+You are commissioned to design and develop a complete digital presence for **Zettos Interior Units**, a real interior design, interior decoration and building construction company based in Lagos, Nigeria.
+
+Do not approach this as a generic business website.
+
+Your responsibility is to create a distinctive, visually impressive, premium, colourful, conversion-focused and fully functional digital product that gives Zettos the online presence of an established professional design-and-build company.
+
+You must handle the branding, user experience, frontend, backend, database, admin dashboard, content management, integrations, testing and deployment readiness.
+
+Think independently. Make thoughtful product decisions. Do not wait for me to specify every design detail.
+
+---
+
+# 1. BUSINESS UNDERSTANDING
+
+Zettos Interior Units operates across two major business categories:
+
+### A. Interior Design & Decoration
+
+The company transforms existing spaces into beautiful, functional and well-designed environments.
+
+Potential service categories include:
+
+- Residential interior design.
+- Living room and bedroom design.
+- Kitchen design and installation.
+- Bathroom design and finishing.
+- Office and corporate interior design.
+- Furniture and custom furniture solutions.
+- Ceiling designs and POP installations.
+- Wall panels, wall treatments and decorative finishes.
+- Lighting design and installation.
+- Flooring, tiling and finishing.
+- Space planning and interior styling.
+- Renovation and interior remodelling.
+
+These are proposed service categories. Make all service content editable so the business can confirm, remove or expand its actual offerings.
+
+### B. Building Construction & Design-Build Services
+
+The company also undertakes building projects from the ground up.
+
+This may include:
+
+- Residential building construction.
+- Commercial building construction.
+- Architectural planning and design coordination.
+- Building renovation and remodelling.
+- Structural and finishing coordination.
+- Project supervision and execution.
+- Interior finishing and final handover.
+
+Do not falsely claim professional licences, certifications, engineering capabilities or regulatory approvals that have not been confirmed.
+
+The website must communicate that Zettos can help clients transform an initial building idea into a completed property, subject to the actual services and professional partners available.
+
+### Core Brand Positioning
+
+Zettos should be positioned as:
+
+"A creative design-and-build company transforming spaces and bringing architectural visions to life."
+
+Suggested brand tagline:
+
+"Spaces That Inspire. Structures That Last."
+
+Other possible supporting statements:
+
+- From Foundation to Finish.
+- Where Vision Becomes Space.
+- Thoughtfully Designed. Beautifully Built.
+- We Design Spaces. We Build Possibilities.
+
+Choose one strong primary tagline and use the others selectively in the brand experience.
+
+---
+
+# 2. BRAND IDENTITY AND CREATIVE DIRECTION
+
+Develop a distinctive visual identity for Zettos Interior Units.
+
+The brand should communicate:
+
+- Creativity.
+- Professionalism.
+- Craftsmanship.
+- Elegance.
+- Reliability.
+- Architectural expertise.
+- Modern African design sensibility.
+- Attention to detail.
+
+### Colour direction
+
+Explore a sophisticated colour system built around:
+
+- Deep forest green: #263D32
+- Warm terracotta: #C87552
+- Muted golden yellow: #E4B957
+- Warm ivory: #F4EDE2
+- Charcoal: #292A28
+
+You may refine these colours if your design exploration produces a stronger palette.
+
+Use colour intentionally. The website should be colourful and expressive without becoming visually chaotic.
+
+Use warm neutral backgrounds, strong architectural photography, rich accent colours, elegant contrasts and carefully controlled gradients.
+
+Do not make every section use the same background colour.
+
+### Typography
+
+Develop a refined typography system.
+
+Consider combining:
+
+- An elegant editorial serif font for major headings.
+- A modern sans-serif font for navigation, body copy, labels and buttons.
+
+Typography should make the brand feel like a serious architecture and interior design studio.
+
+### Logo
+
+Create a distinctive Zettos wordmark and a complementary monogram.
+
+Explore a sophisticated lettermark built around the letter Z, potentially inspired by architectural geometry, floor plans, spatial arrangements or structural lines.
+
+The logo must work on:
+
+- Website navigation.
+- Mobile navigation.
+- Social media profile images.
+- Business cards.
+- Project documents.
+- Company letterheads.
+
+Generate multiple logo concepts, select the strongest direction and implement the final version as editable SVG assets.
+
+Do not use generic house icons or stock construction symbols.
+
+---
+
+# 3. DESIGN INSPIRATION AND RESEARCH
+
+Use the following companies and products as design references. Study their presentation, user journeys and visual hierarchy. Do not copy their designs directly.
+
+1. YODEZEEN — https://yodezeen.com/
+   Reference for premium architecture portfolios, large-format project imagery, typography and project categorisation.
+
+2. Studio McGee — https://www.studio-mcgee.com/
+   Reference for warm interior design branding, storytelling and polished project presentations.
+
+3. Havenly — https://havenly.com/interior-design-services
+   Reference for explaining services, customer journeys, consultations and before-and-after presentations.
+
+4. Houzz Pro — https://pro.houzz.com/pro
+   Reference for professional design workflows, project communication and future client dashboard possibilities.
+
+5. Homestyler — https://www.homestyler.com/
+   Reference for interior visualisation, 3D concepts and design presentations.
+
+6. Buildertrend — https://buildertrend.com/
+   Reference for construction project organisation and future project-tracking capabilities.
+
+The resulting website should combine the strongest ideas from these references into one coherent Zettos brand experience.
+
+---
+
+# 4. IMAGE GENERATION AND VISUAL ASSETS
+
+Images are extremely important to this business.
+
+Do not build an interior design website with empty image placeholders, generic coloured rectangles or random low-quality stock imagery.
+
+Where image-generation capabilities are available, generate suitable high-quality images and integrate them directly into the project.
+
+Generate a cohesive collection of professional architectural and interior design photographs, including:
+
+- Luxury contemporary living rooms.
+- Modern African-inspired living spaces.
+- Beautifully designed bedrooms.
+- Premium kitchen interiors.
+- Modern bathrooms.
+- Luxury office interiors.
+- Contemporary building exteriors.
+- Residential buildings at different construction stages.
+- Commercial building architecture.
+- Furniture and decorative details.
+- Lighting, wall finishes and architectural materials.
+- Before-and-after style interior concepts.
+- Construction site and building progress visuals.
+
+### Image art direction
+
+The images should resemble professional architectural photography.
+
+Prioritise:
+
+- Realistic lighting.
+- High-resolution details.
+- Natural materials.
+- Beautiful spatial compositions.
+- Rich but tasteful colours.
+- Premium furniture.
+- Realistic building proportions.
+- Professional architectural photography.
+- Diverse and contemporary African design influences where appropriate.
+
+Avoid repetitive images, distorted furniture, unrealistic architectural structures, excessive AI-looking details and watermarks.
+
+Generate different images for different website sections. Do not repeatedly reuse the same hero image.
+
+### Image management
+
+Store generated images in a clearly organised local asset structure.
+
+For example:
+
+public/images/
+  brand/
+  hero/
+  interiors/
+  bedrooms/
+  kitchens/
+  living-rooms/
+  bathrooms/
+  offices/
+  architecture/
+  construction/
+  projects/
+  details/
+
+Create an asset manifest documenting each image and its intended use.
+
+Make all images replaceable later without requiring structural code changes.
+
+Use responsive image optimisation, appropriate aspect ratios, lazy loading and descriptive alt text.
+
+IMPORTANT: Generated concept images must not be presented as photographs of completed Zettos projects.
+
+If an image represents an illustrative concept rather than an actual completed project, label it appropriately as a concept visualisation.
+
+Never invent client names, completed projects, project locations, customer reviews, awards or company statistics.
+
+---
+
+# 5. PUBLIC WEBSITE STRUCTURE
+
+Build a complete, responsive public website with the following pages.
+
+## A. Homepage
+
+The homepage should be visually exceptional.
+
+It must immediately communicate what Zettos does and why a visitor should trust the company.
+
+Suggested structure:
+
+1. Premium navigation header.
+2. Large immersive hero section with architectural imagery.
+3. Strong headline and supporting introduction.
+4. Primary CTA: Explore Our Projects.
+5. Secondary CTA: Start a Project.
+6. Introduction to Zettos and its philosophy.
+7. Two major service categories:
+   - Interior Design & Decoration.
+   - Building Construction & Design-Build.
+8. Featured projects with large photographs.
+9. A section showcasing the transformation of spaces.
+10. Our approach / how we work.
+11. Why choose Zettos.
+12. Selected project categories.
+13. Client testimonials, only when genuine testimonials are available.
+14. Consultation and project enquiry CTA.
+15. Footer with contact information and social links.
+
+Make the homepage feel like a premium design studio, not a standard corporate landing page.
+
+Use an asymmetrical editorial layout, intentional whitespace, beautiful image compositions and varied section layouts.
+
+## B. About Us
+
+Create a compelling company profile page covering:
+
+- Company introduction.
+- Brand philosophy.
+- Mission and vision.
+- Core values.
+- Approach to design and construction.
+- Team section.
+- Why clients should work with Zettos.
+
+Keep all content editable from the admin dashboard.
+
+Do not fabricate company history, founding dates or staff biographies.
+
+## C. Services
+
+Create dedicated service pages.
+
+Interior Design & Decoration:
+- Residential interiors.
+- Commercial interiors.
+- Kitchens and bathrooms.
+- Furniture and fittings.
+- Space planning.
+- Renovation and finishing.
+
+Building Construction:
+- Residential construction.
+- Commercial construction.
+- Building from foundation to completion.
+- Renovation and remodelling.
+- Finishing and handover.
+
+Every service page should contain:
+- A strong hero visual.
+- Clear service description.
+- Scope of work.
+- Relevant project imagery.
+- The process involved.
+- Frequently asked questions where useful.
+- A prominent enquiry CTA.
+
+Only display services confirmed by the business as available.
+
+## D. Projects / Portfolio
+
+This is one of the most important pages.
+
+Create a visually rich, filterable portfolio.
+
+Allow visitors to filter projects by:
+
+- Interior Design.
+- Residential.
+- Commercial.
+- Office.
+- Kitchen.
+- Bedroom.
+- Living Room.
+- Construction.
+- Renovation.
+- Completed.
+- Ongoing.
+
+Each project should have its own detail page.
+
+Project detail pages should support:
+
+- Project title.
+- Project category.
+- Location.
+- Project status.
+- Project description.
+- Scope of work.
+- Project year.
+- Image gallery.
+- Before-and-after images where available.
+- Project highlights.
+- Related projects.
+- Enquiry CTA.
+
+The portfolio must be database-driven, not hardcoded.
+
+Use clearly marked concept projects for initial visual demonstrations until real project photographs are supplied.
+
+## E. Our Process
+
+Explain how Zettos works with clients.
+
+For interior design:
+
+1. Initial consultation.
+2. Understanding the client's needs and budget.
+3. Site inspection and measurements.
+4. Design concept and space planning.
+5. Material and furniture selection.
+6. Client approval.
+7. Implementation and installation.
+8. Final inspection and handover.
+
+For construction:
+
+1. Initial consultation.
+2. Understanding the project requirements.
+3. Site assessment.
+4. Planning, design coordination and cost estimation.
+5. Agreement and project mobilisation.
+6. Construction and supervision.
+7. Finishing and quality checks.
+8. Handover.
+
+Clearly distinguish the processes where necessary.
+
+Do not imply that design approval or construction can proceed without necessary professional assessments and regulatory requirements.
+
+## F. Contact Us
+
+Create a beautiful contact page with:
+
+- Business contact information.
+- Phone number.
+- WhatsApp contact.
+- Business email.
+- Location.
+- Google Maps embed, once the correct business location is confirmed.
+- Social media links.
+- Contact form.
+- Consultation request CTA.
+
+Make phone numbers clickable and WhatsApp links functional.
+
+---
+
+# 6. PROJECT ENQUIRY AND LEAD GENERATION
+
+Build a functional project enquiry system.
+
+A visitor should be able to submit a project request without creating an account.
+
+The enquiry form should intelligently adapt depending on the service selected.
+
+### Basic information
+
+- Full name.
+- Email address.
+- Phone number.
+- Preferred contact method.
+- Location / project address.
+
+### Project information
+
+- Project category.
+- Residential or commercial.
+- Interior design or construction.
+- Project description.
+- Estimated budget.
+- Preferred project start date.
+- Project size or number of rooms, where relevant.
+
+### File attachments
+
+Allow prospective clients to upload:
+
+- Existing room photographs.
+- Building photographs.
+- Architectural drawings.
+- Floor plans.
+- Reference images.
+- Supporting documents.
+
+Validate file types and sizes securely.
+
+### Submission experience
+
+After submission:
+
+- Validate all information.
+- Save the enquiry in the database.
+- Generate a unique enquiry reference.
+- Send an acknowledgement to the client.
+- Notify the Zettos admin team.
+- Display a professional confirmation page.
+
+Include spam protection, rate limiting and server-side validation.
+
+Use configurable email settings. Do not hardcode secrets.
+
+---
+
+# 7. ADMIN DASHBOARD / CONTENT MANAGEMENT SYSTEM
+
+Build a secure admin dashboard that allows Zettos to manage the website without needing a developer for everyday content updates.
+
+The dashboard must be a functional application, not a decorative UI.
+
+### Admin authentication
+
+- Secure login.
+- Logout.
+- Password hashing.
+- Protected routes.
+- Role-based access.
+- Session management.
+- Secure password reset process.
+
+At minimum, support:
+
+- Super Admin.
+- Content Manager.
+
+### Dashboard overview
+
+Show:
+
+- Total enquiries.
+- New enquiries.
+- In-progress enquiries.
+- Completed projects.
+- Published projects.
+- Draft projects.
+- Recent activities.
+
+Use meaningful charts and summaries only where the data supports them.
+
+### Project management
+
+Admins should be able to:
+
+- Create projects.
+- Edit projects.
+- Delete projects.
+- Publish and unpublish projects.
+- Upload multiple photographs.
+- Set featured images.
+- Reorder gallery images.
+- Assign project categories.
+- Set project locations.
+- Set project status.
+- Add project descriptions.
+- Manage before-and-after images.
+
+### Service management
+
+Allow administrators to:
+
+- Add services.
+- Edit service descriptions.
+- Upload service images.
+- Change service ordering.
+- Publish or unpublish services.
+
+### Enquiry management
+
+Admins should be able to:
+
+- View enquiries.
+- Search enquiries.
+- Filter by category and status.
+- View submitted attachments.
+- Update enquiry status.
+- Add internal notes.
+- Record follow-up activities.
+- Assign enquiries to team members.
+- Export enquiries to CSV.
+
+Suggested enquiry statuses:
+
+- New.
+- Contacted.
+- Consultation Scheduled.
+- Quotation Sent.
+- In Negotiation.
+- Approved.
+- In Progress.
+- Completed.
+- Declined.
+
+### Content management
+
+Allow the admin to edit:
+
+- Homepage hero content.
+- About section.
+- Brand tagline.
+- Company contact information.
+- Social media links.
+- FAQs.
+- Testimonials.
+- SEO metadata.
+- Footer content.
+- Website images.
+
+### Settings
+
+Create a settings section for:
+
+- Business name.
+- Business email.
+- Business phone.
+- WhatsApp number.
+- Office address.
+- Social links.
+- Logo.
+- Brand assets.
+- Email configuration.
+- Website metadata.
+
+All business details should be configurable.
+
+---
+
+# 8. BACKEND AND DATABASE ARCHITECTURE
+
+Implement a real backend with persistent data storage.
+
+First inspect the existing repository and determine its framework, package manager, architecture and installed dependencies.
+
+Do not unnecessarily replace an existing working stack.
+
+If starting from scratch, use the following recommended architecture:
+
+Frontend:
+- Next.js App Router.
+- React.
+- TypeScript.
+- Tailwind CSS.
+- shadcn/ui where appropriate.
+- Framer Motion or Motion for polished animations.
+- Lucide icons.
+
+Backend:
+- Next.js server-side functionality and route handlers, or a clearly separated backend service if justified.
+- PostgreSQL.
+- Prisma ORM.
+- Secure authentication.
+- Input validation using Zod.
+
+File storage:
+- Cloudinary or an S3-compatible storage service.
+- Support image uploads and document uploads.
+- Store file metadata in the database.
+
+Email:
+- Resend or another configurable transactional email provider.
+
+Additional integrations:
+- WhatsApp click-to-chat.
+- Google Maps.
+- Analytics.
+- Optional CAPTCHA or equivalent spam protection.
+
+### Suggested database entities
+
+Design an appropriate relational database with models such as:
+
+- AdminUser.
+- Role.
+- Project.
+- ProjectCategory.
+- ProjectImage.
+- Service.
+- ServiceImage.
+- Enquiry.
+- EnquiryAttachment.
+- EnquiryNote.
+- Testimonial.
+- FAQ.
+- SiteSetting.
+- ActivityLog.
+
+Define proper relationships, indexes, timestamps, validation and constraints.
+
+Create database migrations and seed scripts.
+
+Use environment variables for secrets and external service credentials.
+
+Create a complete .env.example file.
+
+Never commit secrets, passwords, private API keys or production credentials.
+
+### Backend quality
+
+Implement:
+
+- Server-side validation.
+- Error handling.
+- Authentication and authorization.
+- Upload restrictions.
+- Rate limiting.
+- Secure database queries.
+- Protection against common web vulnerabilities.
+- Logging.
+- Pagination.
+- Search and filtering.
+- Consistent API response structures.
+
+Do not use local component state as a substitute for persistent backend functionality.
+
+Every dashboard action should connect to actual backend operations.
+
+---
+
+# 9. VISUAL EXPERIENCE AND INTERACTION
+
+The website should feel premium and carefully art-directed.
+
+Use:
+
+- Full-width architectural imagery.
+- Elegant typography.
+- Asymmetrical grid layouts.
+- Project cards with strong photography.
+- Image galleries.
+- Subtle parallax where appropriate.
+- Smooth section transitions.
+- Thoughtful hover interactions.
+- Refined navigation.
+- Beautiful mobile menus.
+- Scroll-based animation used sparingly.
+- Consistent spacing and layout rhythm.
+
+Avoid:
+
+- Generic SaaS dashboard aesthetics on the public website.
+- Excessive gradients.
+- Too many rounded cards.
+- Excessive glassmorphism.
+- Unnecessary animations.
+- Repetitive section layouts.
+- Oversized text that destroys hierarchy.
+- Generic AI-generated website designs.
+- Random decorative icons.
+- Empty sections.
+- Placeholder links.
+- Fake testimonials.
+- Fake project metrics.
+
+### Mobile experience
+
+The mobile experience is a first-class requirement.
+
+Ensure:
+
+- Navigation works smoothly on mobile.
+- Project galleries are responsive.
+- Images are properly cropped.
+- Forms are easy to complete.
+- Buttons are touch-friendly.
+- Contact and WhatsApp actions are easy to access.
+- No horizontal overflow.
+- Admin dashboard remains usable on smaller screens.
+
+---
+
+# 10. FUTURE-READY PRODUCT ARCHITECTURE
+
+Structure the application so that additional functionality can be added without rebuilding the entire system.
+
+Potential future modules include:
+
+- Client portal.
+- Project progress tracking.
+- Construction milestone updates.
+- Client document sharing.
+- Project quotations and estimates.
+- Invoice management.
+- Payment tracking.
+- Material selection and approvals.
+- 2D/3D design presentation.
+- Client feedback and approvals.
+- Team and subcontractor management.
+
+Do not implement all these features in the initial release.
+
+Keep the architecture extensible so they can be introduced when the business is ready.
+
+---
+
+# 11. SEO, PERFORMANCE AND ACCESSIBILITY
+
+Implement professional SEO:
+
+- Unique page titles.
+- Meta descriptions.
+- Open Graph metadata.
+- Twitter/X card metadata.
+- XML sitemap.
+- robots.txt.
+- Canonical URLs.
+- Structured data for the business and services.
+- Descriptive image alt text.
+- Semantic HTML.
+
+Optimise for searches relevant to the business, including:
+
+- Interior designers in Lagos.
+- Interior decoration in Lagos.
+- Building construction companies in Lagos.
+- Residential construction in Lagos.
+- Office interior design in Lagos.
+- Home renovation in Lagos.
+
+Do not keyword-stuff content.
+
+Performance requirements:
+
+- Optimised images.
+- Responsive image loading.
+- Lazy loading.
+- Code splitting.
+- Efficient database queries.
+- Caching where appropriate.
+- Minimal layout shifts.
+- Fast page transitions.
+
+Accessibility requirements:
+
+- Keyboard navigation.
+- Visible focus states.
+- Sufficient colour contrast.
+- Accessible form labels.
+- Screen-reader-friendly controls.
+- Reduced-motion support.
+
+---
+
+# 12. IMPLEMENTATION APPROACH
+
+Do not immediately start generating random components.
+
+Follow a deliberate implementation process.
+
+### Phase 1: Repository inspection and planning
+
+- Inspect the current repository.
+- Identify the existing stack and architecture.
+- Review installed dependencies.
+- Identify existing reusable components.
+- Propose the application structure.
+- Identify necessary packages and integrations.
+- Present a concise implementation plan.
+
+### Phase 2: Brand and design system
+
+- Develop the Zettos visual identity.
+- Create the logo and monogram.
+- Establish colour tokens.
+- Establish typography.
+- Create buttons, navigation, forms and reusable components.
+- Generate and organise the required images.
+- Build the responsive layout system.
+
+### Phase 3: Public website
+
+Implement all public-facing pages.
+
+Ensure the website is complete and visually consistent before moving to the backend.
+
+### Phase 4: Backend and database
+
+- Implement the database.
+- Create models and migrations.
+- Implement authentication.
+- Build the enquiry system.
+- Implement content management.
+- Implement project and service management.
+- Connect the frontend to persistent data.
+
+### Phase 5: Admin dashboard
+
+Build all required dashboard modules and connect them to real backend operations.
+
+### Phase 6: Testing and refinement
+
+Test:
+
+- All public routes.
+- Mobile navigation.
+- Forms.
+- File uploads.
+- Authentication.
+- Authorization.
+- Project CRUD.
+- Service CRUD.
+- Enquiry management.
+- Email notifications.
+- Database persistence.
+- Empty states.
+- Error states.
+- Loading states.
+- SEO metadata.
+
+Fix all significant bugs before declaring completion.
+
+### Phase 7: Deployment readiness
+
+Provide:
+
+- Production build.
+- Database migration instructions.
+- Environment variable documentation.
+- Seed instructions.
+- Deployment instructions.
+- Admin account creation procedure.
+- Backup recommendations.
+- README documentation.
+
+---
+
+# 13. DEFINITION OF DONE
+
+The project is not complete simply because the homepage looks good.
+
+The following must be true:
+
+1. The public website is visually polished and responsive.
+2. Every navigation item works.
+3. Every public page has meaningful content.
+4. Projects are loaded from the database.
+5. Services are manageable through the dashboard.
+6. Enquiry forms submit successfully.
+7. Uploaded files are stored securely.
+8. Admin authentication works.
+9. Unauthorized users cannot access protected dashboard functions.
+10. Admins can create, update, publish and delete projects.
+11. Admins can view and manage enquiries.
+12. Content can be updated without changing source code.
+13. The application has appropriate loading, empty and error states.
+14. Database migrations and seed scripts work.
+15. Production configuration is documented.
+16. No major console errors or broken routes remain.
+
+Do not fake functionality with static data when a real implementation is required.
+
+Where external credentials are unavailable, implement the integration structure, document the missing configuration and provide a clear setup process.
+
+---
+
+# 14. FINAL CREATIVE INSTRUCTION
+
+I want this to look like the digital presence of a highly regarded interior architecture and construction studio.
+
+When someone opens the homepage, the first impression should be:
+
+"This company understands design, space, detail and construction. I can trust them with my property."
+
+Be bold with the visual direction. Use beautiful architectural photography, refined typography, intelligent layouts, warm colours and excellent interaction design.
+
+Do not settle for a generic template.
+
+Do not compromise the backend for the sake of frontend appearance.
+
+Do not compromise visual quality for the sake of functionality.
+
+Build both sides to a professional standard.
+
+Take ownership of the product. Think critically, make strong design decisions, and deliver a complete, maintainable and production-ready application.
+
+**Project name: Zettos Interior Units.**
+
+**Primary objective: Build a premium digital brand and full-stack business website that generates genuine project enquiries and showcases the company's interior design and construction capabilities.**

@@ -1,0 +1,14 @@
+4. My recommended implementation strategy
+Although the prompt contains the entire product vision, I would build this in stages rather than ask Copilot to generate everything in one uncontrolled pass.
+1. Brand identity and homepage
+
+   Establish the logo, typography, colour system, navigation, hero section and homepage experience first.
+2. Services and portfolio
+
+   Build the service pages, project categories, individual project pages and image galleries.
+3. Backend and admin dashboard
+
+   Implement authentication, database, project management, services, enquiries, uploads and content management.
+4. Testing and launch
+
+   Test all functionality, replace concept imagery with actual company projects, configure business details and deploy.
