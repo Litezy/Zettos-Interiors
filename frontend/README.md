@@ -20,7 +20,7 @@ npm run dev
 
 The website runs at `http://localhost:4001`. To start the API, follow the setup instructions in [`../backend/README.md`](../backend/README.md).
 
-If `VITE_API_BASE_URL` is unset, public pages use the bundled preview content. CMS and enquiry submissions still require the API; when the variable is set, public content is loaded from that API.
+For a frontend-only approval preview, leave `VITE_API_BASE_URL` blank or unset. The homepage, all 38 bundled project entries and their detail pages, both services and their detail pages, About and Process work without the API. CMS login and enquiry submission require the backend and will not work in a frontend-only deployment. When the variable is set, public content is loaded from the API.
 
 ## Environment and secrets
 
